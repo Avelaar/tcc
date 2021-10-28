@@ -7,8 +7,8 @@ import Pedido from './pages/Client/Pedido'
 import Cart from './pages/Cart/cart'
 import Home from "../src/pages/home/index";
 import DetalhesProduto from "../src/pages/detalhes roupa/index";
-import PagamentoCarrinho from "../src/pages/pagamento-carrinho/index";
-import PagamentoInfo from "./pages/pagamento-info";
+import PagamentoInfo from "../src/pages/pagamento-info/index";
+import PagamentoFrete from "./pages/pagamento-frete";
 
 export default function Routes() {
     return (
@@ -19,8 +19,8 @@ export default function Routes() {
                 <Route path="/pedido" exact={true} component={Pedido} />
                 <Route path="/carrinho" exact={true} component={Cart} />
                 <Route path="/DetalhesProduto" component={DetalhesProduto} />
-                <Route path="/PagamentoCarrinho" component={PagamentoCarrinho} />
                 <Route path="/PagamentoInfo" component={PagamentoInfo} />
+                <Route path="/PagamentoFrete" component={PagamentoFrete} />
             </Switch>
         </BrowserRouter>
     )
