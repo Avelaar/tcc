@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.986);
 
   .img-produto img {
     width: 13em;
@@ -27,6 +28,7 @@ const Container = styled.div`
   }
   /*sobre a empresa opaco*/
   .nome,
+
   .texto-loja {
     margin: 1em 2em 2em 2em;
     font-size: 3em;
@@ -71,10 +73,12 @@ const Container = styled.div`
     font-size: 1.1em;
   }
 
-  @media screen and (min-height: 700px) and (max-height: 800px) {
+  @media (max-height: 1300px) {
     .imagem {
-      background-size: 100% 44em;
+      background-size: 100% 50em;
     }
+    .texto-loja {
+      margin: 1em 2em 0em 2em;
   }
 `;
 

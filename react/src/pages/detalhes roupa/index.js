@@ -1,6 +1,9 @@
 import { Container } from "./styled";
 import Cabecalho from "../../components/cabecalho/index";
 import Rodape from "../../components/rodape/index";
+import Carousel from "react-multi-carousel";
+import 'react-multi-carousel/lib/styles.css'
+import { CarouselConfig } from "./carouselconfig";
 
 export default function DetalhesProduto() {
   return (
@@ -123,43 +126,57 @@ export default function DetalhesProduto() {
       <div>
         <b>VEJA TAMBÉM</b>
       </div>
-      <div class="previas-produto">
-        <div class="box-previa">
-          <div class="imagem-previa">
-            <img src="../../assets/images/bone-preto-hocks.jpg" alt="" />
+  
+        <div class="previas-produto">
+        
+        <Carousel
+        responsive={CarouselConfig}
+        infinite={true}
+        containerClass="carousel-container"
+        showDots={true}
+        >
+          <div class="box-previa">
+            <div class="imagem-previa">
+              <img src="../../assets/images/bone-preto-hocks.jpg" alt="" />
+            </div>
+            <div class="desc-previa"> Boné Aba Curva Hocks Fili Preto Snap</div>
+            <div class="valor-previa">R$ 119,98</div>
+            <button class="botao-previa">Comprar</button>
           </div>
-          <div class="desc-previa"> Boné Aba Curva Hocks Fili Preto Snap</div>
-          <div class="valor-previa">R$ 119,98</div>
-          <button class="botao-previa">Comprar</button>
+          
+          <div class="box-previa">
+            <div class="imagem-previa">
+              <img src="../../assets/images/tenis-OUS-azul.jpg" alt="" />
+            </div>
+            <div class="desc-previa"> Tênis ous OAMF Azul e Vermelho</div>
+            <div class="valor-previa">R$ 279,98</div>
+            <button class="botao-previa">Comprar</button>
+          </div>
+          
+          <div class="box-previa">
+            <div class="imagem-previa">
+              <img src="../../assets/images/calça nylon.jpg" alt="" />
+            </div>
+            <div class="desc-previa">
+              Calça Nylon Ipermeável Branca Logo Klace
+            </div>
+            <div class="valor-previa">R$ 249,90</div>
+            <button class="botao-previa">Comprar</button>
+          </div>
+          
+          <div class="box-previa">
+            <div class="imagem-previa">
+              <img src="../../assets/images/vestido-sportclub.jpg" alt="" />
+            </div>
+            <div class="desc-previa"> Vestido Sport Club WI Feminino</div>
+            <div class="valor-previa">R$ 249,90</div>
+            <button class="botao-previa">Comprar</button>
+          </div>
+          
+          </Carousel>
         </div>
-        <div class="box-previa">
-          <div class="imagem-previa">
-            <img src="../../assets/images/tenis-OUS-azul.jpg" alt="" />
-          </div>
-          <div class="desc-previa"> Tênis ous OAMF Azul e Vermelho</div>
-          <div class="valor-previa">R$ 279,98</div>
-          <button class="botao-previa">Comprar</button>
-        </div>
-        <div class="box-previa">
-          <div class="imagem-previa">
-            <img src="../../assets/images/calça nylon.jpg" alt="" />
-          </div>
-          <div class="desc-previa">
-            Calça Nylon Ipermeável Branca Logo Klace
-          </div>
-          <div class="valor-previa">R$ 249,90</div>
-          <button class="botao-previa">Comprar</button>
-        </div>
-        <div class="box-previa">
-          <div class="imagem-previa">
-            <img src="../../assets/images/vestido-sportclub.jpg" alt="" />
-          </div>
-          <div class="desc-previa"> Vestido Sport Club WI Feminino</div>
-          <div class="valor-previa">R$ 249,90</div>
-          <button class="botao-previa">Comprar</button>
-        </div>
-      </div>
-      <Rodape></Rodape>
+        
+        <Rodape></Rodape>
     </Container>
   );
 }

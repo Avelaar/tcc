@@ -65,11 +65,11 @@ export default function PagamentoFrete() {
                     <select required>
                         <option value="" disabled selected> Nº de vezes </option>
                         <option value="1x">1x sem juros</option>
-                        <option value="1x">2x sem juros</option>
-                        <option value="1x">3x sem juros</option>
-                        <option value="1x">4x sem juros</option>
-                        <option value="1x">5x sem juros</option>
-                        <option value="1x">6x sem juros</option>
+                        <option value="2x">2x sem juros</option>
+                        <option value="3x">3x sem juros</option>
+                        <option value="4x">4x sem juros</option>
+                        <option value="5x">5x sem juros</option>
+                        <option value="6x">6x sem juros</option>
                     </select>
                 </div>
               </div>

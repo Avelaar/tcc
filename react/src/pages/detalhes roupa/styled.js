@@ -62,14 +62,20 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
   }
-  .previas-produto {
-    display: flex;
-    flex-direction: row;
-    margin: 3em 0em 6em 0em;
-    text-align: center;
+ 
+
+  .quad-1 button {
+    background-color: #1282a2;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 0.2em;
+    width: 100%;
+    align-items: flex-end;
+    border-color: white;
+    color: white;
   }
 
-  button {
+  .botao-previa {
     background-color: #1282a2;
     padding: 0.5em;
     margin-top: 1em;
@@ -98,10 +104,11 @@ const Container = styled.div`
     margin: 0px;
   }
 
+  .area-frete input {
+      margin: 0px 1.7em 0px 0px;
+  }
   .CEP {
-    width: 11em;
-    height: 2.2em;
-    margin-left: 1em;
+    margin-left: 0em;
     margin-right: 1em;
   }
 
@@ -138,12 +145,26 @@ const Container = styled.div`
   .G,
   .GG {
     margin: 0em;
-    margin-left: -2em;
-    margin-right: -2em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   .tamanho {
     font-size: 1.1em;
+  }
+
+  .previas-produto {
+    display: flex;
+    flex-direction: row;
+    margin: 3em 0em 6em 0em;
+    text-align: center;
+    width: 100%;
+    height: 21em;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 21em;
   }
 `;
 
